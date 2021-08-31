@@ -12,12 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout
+        with:
+          depth: 0
       - uses: actions/setup-node@v2
         name: Setup Node
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn install
+      - run: yarn install --ignore-scripts
       - run: yarn test
       - run: yarn build
 
@@ -26,10 +28,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         name: Checkout
+        with:
+          depth: 0
       - uses: actions/setup-node@v2
         name: Setup Node
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn install
-      - run: yarn nx format:check --all
+      - run: yarn install --ignore-scripts
+      - run: yarn nx format:check

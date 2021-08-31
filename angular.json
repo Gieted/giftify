@@ -17,10 +17,7 @@
             "polyfills": "apps/giftify/src/polyfills.ts",
             "tsConfig": "apps/giftify/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "apps/giftify/src/favicon.ico",
-              "apps/giftify/src/assets"
-            ],
+            "assets": ["apps/giftify/src/favicon.ico", "apps/giftify/src/assets"],
             "styles": ["apps/giftify/src/styles.scss"],
             "scripts": []
           },
@@ -78,10 +75,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/giftify/src/**/*.ts",
-              "apps/giftify/src/**/*.html"
-            ]
+            "lintFilePatterns": ["apps/giftify/src/**/*.ts", "apps/giftify/src/**/*.html"]
           }
         },
         "test": {

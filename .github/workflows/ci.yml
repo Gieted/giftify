@@ -13,12 +13,12 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout
         with:
-          depth: 0
+          fetch-depth: 0
       - uses: actions/setup-node@v2
         name: Setup Node
         with:
           node-version: '14'
-          fetch-depth: 'yarn'
+          cache: 'yarn'
       - run: yarn install --ignore-scripts
       - run: yarn test
       - run: yarn build
@@ -29,11 +29,11 @@ jobs:
       - uses: actions/checkout@v2
         name: Checkout
         with:
-          depth: 0
+          fetch-depth: 0
       - uses: actions/setup-node@v2
         name: Setup Node
         with:
           node-version: '14'
-          fetch-depth: 'yarn'
+          cache: 'yarn'
       - run: yarn install --ignore-scripts
       - run: yarn nx format:check

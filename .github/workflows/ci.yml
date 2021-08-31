@@ -22,6 +22,6 @@ jobs:
           node-version: '14'
           cache: 'yarn'
       - run: yarn install --ignore-scripts
-      - run: yarn nx format:check
+      - run: yarn nx format:check --base=${{ env.NX_BASE }} --head=${{ env.NX_HEAD }}
       - run: yarn test
       - run: yarn build

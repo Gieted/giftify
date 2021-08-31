@@ -1,0 +1,46 @@
+{
+  "npmScope": "giftify",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "MjU2ZjNmM2UtYzMxYy00YmIwLWJmYmQtNTZjN2U4NDI5MWVlfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "giftify": {
+      "tags": []
+    },
+    "giftify-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "giftify"
+      ]
+    }
+  }
+}

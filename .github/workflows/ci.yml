@@ -14,14 +14,16 @@ jobs:
         name: Checkout
         with:
           fetch-depth: 0
-      - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        uses: nrwl/nx-set-shas@v2
+      - uses: nrwl/nx-set-shas@v2
+        name: Derive appropriate SHAs for base and head for `nx affected` commands
+        with:
+          main-branch-name: 'master'
       - uses: actions/setup-node@v2
         name: Setup Node
         with:
           node-version: '14'
           cache: 'yarn'
       - run: yarn install --ignore-scripts
-      - run: yarn nx format:check --base=${{ env.NX_BASE }} --head=${{ env.NX_HEAD }}
+      - run: yarn nx format:check
       - run: yarn test
       - run: yarn build

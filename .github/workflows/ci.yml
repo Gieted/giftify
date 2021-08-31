@@ -18,7 +18,7 @@ jobs:
         name: Setup Node
         with:
           node-version: '14'
-          cache: 'yarn'
+          fetch-depth: 'yarn'
       - run: yarn install --ignore-scripts
       - run: yarn test
       - run: yarn build
@@ -34,6 +34,6 @@ jobs:
         name: Setup Node
         with:
           node-version: '14'
-          cache: 'yarn'
+          fetch-depth: 'yarn'
       - run: yarn install --ignore-scripts
       - run: yarn nx format:check

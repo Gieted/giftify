@@ -1,0 +1,11 @@
+:host {
+  display: inline-block;
+}
+
+input {
+  outline: none;
+  border-color: transparent;
+  background-color: #a2a1a1;
+  height: 25px;
+  -moz-appearance: textfield;
+}

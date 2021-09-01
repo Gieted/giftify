@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    width: 800px;
+    height: 400px;
+}
+
+.img-container{
+    padding: 20px;
+}
+
+img {
+    height: 300px;
+    width: 500px;
+}
+
+.title{
+    text-transform: capitalize;
+    width: 300px;
+    font-size: 30px;
+}
+
+.price{
+    font-size: 30px;
+    width: 150px;
+}

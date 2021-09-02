@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn install --ignore-scripts
+      - run: yarn install --ignore-scripts --frozen-lockfile
         name: Install dependencies
       - run: yarn nx format:check
         name: Check style

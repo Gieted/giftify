@@ -9,7 +9,7 @@ export default {
       imports: [],
     })
   ],
-  argTypes: { removeItem: { action: 'removeItem' } },
+  argTypes: { removeItemByIndex: { action: 'removeItemByIndex' } },
 } as Meta<TagsComponent>;
 
 const Template: Story<TagsComponent> = (args: TagsComponent) => ({

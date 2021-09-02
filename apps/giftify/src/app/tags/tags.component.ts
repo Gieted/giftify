@@ -11,7 +11,7 @@ export class TagsComponent {
   list: string[] = [];
 
   @Output()
-  removeItem = new EventEmitter<number>()
+  removeItemByIndex = new EventEmitter<number>()
 
   private readonly colors = [
     '#e13131',

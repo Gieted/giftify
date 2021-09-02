@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RangeSelectorComponent } from './range-selector.component';
+import { InputComponent } from '../input/input.component';
 
 describe('RangeSelectorComponent', () => {
   let component: RangeSelectorComponent;
@@ -8,7 +9,7 @@ describe('RangeSelectorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [RangeSelectorComponent],
+      declarations: [RangeSelectorComponent, InputComponent],
     }).compileComponents();
   });
 

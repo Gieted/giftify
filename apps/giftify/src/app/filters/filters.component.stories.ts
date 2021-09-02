@@ -1,5 +1,13 @@
 import { FiltersComponent } from './filters.component';
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
+import { HobbiesService } from '../hobbies/hobbies.service';
+import { TagsComponent } from '../tags/tags.component';
+import { RangeSelectorComponent } from '../range-selector/range-selector.component';
+import { InputComponent } from '../input/input.component';
+
+class HobbiesServiceMock implements HobbiesService {
+  selectedHobbies = ['sports', 'board games', 'movies', 'books', 'chess']
+}
 
 export default {
   title: 'Filters',
@@ -7,6 +15,8 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [],
+      providers: [{provide: HobbiesService, useClass: HobbiesServiceMock}],
+      declarations: [TagsComponent, RangeSelectorComponent, InputComponent]
     }),
   ],
 } as Meta<FiltersComponent>;

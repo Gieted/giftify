@@ -1,0 +1,7 @@
+<h3>Filters:</h3>
+
+<div class='filter-label'>hobbies:</div>
+<giftify-tags [list]='hobbiesService.selectedHobbies' (removeItemByIndex)='removeHobby($event)'></giftify-tags>
+
+<div class='filter-label'>price:</div>
+<giftify-range-selector class='price-selector'></giftify-range-selector> <span>zł</span>

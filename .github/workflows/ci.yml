@@ -27,6 +27,8 @@ jobs:
         name: Install dependencies
       - run: yarn nx format:check
         name: Check style
+      - run: yarn nx lint
+        name: Lint
       - run: yarn test
         name: Run tests
       - run: yarn build

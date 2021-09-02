@@ -2,9 +2,11 @@
    * Remove template code below
    */
 :host {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: sans-serif;
   min-width: 300px;
-  max-width: 600px;
-  margin: 50px auto;
+background-color: #f2f4f5;
 }
+

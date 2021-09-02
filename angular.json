@@ -21,7 +21,7 @@
               "apps/giftify/src/favicon.ico",
               "apps/giftify/src/assets"
             ],
-            "styles": ["apps/giftify/src/styles.scss"],
+            "styles": ["node_modules/bootstrap/scss/bootstrap.scss","apps/giftify/src/styles.scss"],
             "scripts": []
           },
           "configurations": {

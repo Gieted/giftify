@@ -1,25 +1,26 @@
-.container{
-    display: flex;
-    width: 800px;
-    height: 400px;
+.row{
+    margin-top: 20px;
+    background-color: #fff;
 }
 
-.img-container{
-    padding: 20px;
-}
 
 img {
     height: 300px;
-    width: 500px;
+    max-width: 330px;
+    object-fit: cover;
+        padding: 20px;
 }
 
 .title{
     text-transform: capitalize;
     width: 300px;
-    font-size: 30px;
+    font-size: 35px;
+    margin-top: 10px;
 }
 
 .price{
     font-size: 30px;
+    margin-top: 10px;
     width: 150px;
+    align-self: flex-end;
 }

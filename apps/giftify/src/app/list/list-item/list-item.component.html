@@ -1,11 +1,15 @@
-<div class="container">
-  <div class="img-container">
-    <img [src]="gift.imgPath" alt="" class="img" />
+<div class="row">
+  <div class="col-lg-4">
+    <img [src]="gift.imgPath" [alt]="gift.name" class="img" />
   </div>
-  <div class="title">
-    <p>{{ gift.name }}</p>
+  <div class="col-lg-6">
+    <div class="title">
+      <p>{{ gift.name }}</p>
+    </div>
   </div>
-  <div class="price">
-    <p>{{ gift.price }} zł</p>
+  <div class="col-lg-2">
+    <div class="price">
+      <p>{{ gift.price }} zł</p>
+    </div>
   </div>
 </div>

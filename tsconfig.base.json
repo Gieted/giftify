@@ -14,8 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {},
-    "strict": true
+    "paths": {}
   },
   "exclude": ["node_modules", "tmp"]
 }

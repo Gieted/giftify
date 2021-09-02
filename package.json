@@ -9,7 +9,7 @@
     "build": "nx build",
     "test": "nx test",
     "storybook": "nx storybook",
-    "prettify": "nx format:write",
+    "prettify": "nx format:write --all",
     "prepare": "husky install"
   },
   "private": true,

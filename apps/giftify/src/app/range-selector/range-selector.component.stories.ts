@@ -9,7 +9,7 @@ export default {
     moduleMetadata({
       declarations: [InputComponent],
       imports: [],
-    })
+    }),
   ],
 } as Meta<RangeSelectorComponent>;
 
@@ -18,7 +18,5 @@ const Template: Story<RangeSelectorComponent> = (args: RangeSelectorComponent) =
   props: args,
 });
 
-
 export const Primary = Template.bind({});
-Primary.args = {
-}
+Primary.args = {};

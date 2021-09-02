@@ -6,7 +6,7 @@ import { RangeSelectorComponent } from '../range-selector/range-selector.compone
 import { InputComponent } from '../input/input.component';
 
 class HobbiesServiceMock implements HobbiesService {
-  selectedHobbies = ['sports', 'board games', 'movies', 'books', 'chess']
+  selectedHobbies = ['sports', 'board games', 'movies', 'books', 'chess'];
 }
 
 export default {
@@ -15,8 +15,8 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [],
-      providers: [{provide: HobbiesService, useClass: HobbiesServiceMock}],
-      declarations: [TagsComponent, RangeSelectorComponent, InputComponent]
+      providers: [{ provide: HobbiesService, useClass: HobbiesServiceMock }],
+      declarations: [TagsComponent, RangeSelectorComponent, InputComponent],
     }),
   ],
 } as Meta<FiltersComponent>;

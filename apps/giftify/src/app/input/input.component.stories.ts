@@ -7,14 +7,14 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [],
-    })
+    }),
   ],
   argTypes: {
     type: {
       options: ['text', 'number'],
-      control: { type: 'radio' }
-    }
-  }
+      control: { type: 'radio' },
+    },
+  },
 } as Meta<InputComponent>;
 
 const Template: Story<InputComponent> = (args: InputComponent) => ({
@@ -22,10 +22,9 @@ const Template: Story<InputComponent> = (args: InputComponent) => ({
   props: args,
 });
 
-
 export const Primary = Template.bind({});
 Primary.args = {
   width: '120px',
   placeholder: 'Type here!',
-  type: 'text'
-}
+  type: 'text',
+};

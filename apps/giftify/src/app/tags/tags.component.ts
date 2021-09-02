@@ -6,22 +6,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./tags.component.scss'],
 })
 export class TagsComponent {
-
   @Input()
   list: string[] = [];
 
   @Output()
-  removeItemByIndex = new EventEmitter<number>()
+  removeItemByIndex = new EventEmitter<number>();
 
-  private readonly colors = [
-    '#e13131',
-    '#1fcc19',
-    '#19b1cc',
-    '#efe43c',
-    '#cc84ff'
-  ]
+  private readonly colors = ['#e13131', '#1fcc19', '#19b1cc', '#efe43c', '#cc84ff'];
 
   getColor(index: number) {
-    return this.colors[index % this.colors.length]
+    return this.colors[index % this.colors.length];
   }
 }

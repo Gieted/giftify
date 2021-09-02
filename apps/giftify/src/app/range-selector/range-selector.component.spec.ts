@@ -8,9 +8,8 @@ describe('RangeSelectorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RangeSelectorComponent ]
-    })
-    .compileComponents();
+      declarations: [RangeSelectorComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

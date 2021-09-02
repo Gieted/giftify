@@ -8,9 +8,7 @@ import { withoutElement } from '../../utils/array-utils';
   styleUrls: ['./filters.component.scss'],
 })
 export class FiltersComponent {
-  constructor(public hobbiesService: HobbiesService) {
-    console.log(hobbiesService);
-  }
+  constructor(public hobbiesService: HobbiesService) {}
 
   removeHobby(index: number) {
     this.hobbiesService.selectedHobbies = withoutElement(this.hobbiesService.selectedHobbies, index);

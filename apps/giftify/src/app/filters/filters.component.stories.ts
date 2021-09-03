@@ -5,7 +5,7 @@ import { TagsComponent } from '../tags/tags.component';
 import { RangeSelectorComponent } from '../range-selector/range-selector.component';
 import { InputComponent } from '../input/input.component';
 
-class HobbiesServiceMock implements HobbiesService {
+class HobbiesServiceMock extends HobbiesService {
   selectedHobbies = ['sports', 'board games', 'movies', 'books', 'chess'];
 }
 

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { HobbiesService } from '../hobbies/hobbies.service';
-import { withoutElement } from '../../utils/array-utils';
 
 @Component({
   selector: 'giftify-filters',
@@ -9,8 +8,4 @@ import { withoutElement } from '../../utils/array-utils';
 })
 export class FiltersComponent {
   constructor(public hobbiesService: HobbiesService) {}
-
-  removeHobby(index: number) {
-    this.hobbiesService.selectedHobbies = withoutElement(this.hobbiesService.selectedHobbies, index);
-  }
 }

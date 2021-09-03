@@ -34,6 +34,4 @@ export class ListService {
   getList(): Gift[] {
     return this.giftList;
   }
-
-  constructor() {}
 }

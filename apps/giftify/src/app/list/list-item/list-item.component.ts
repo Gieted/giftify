@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Gift } from '../../shared/gift.model';
 
 @Component({
@@ -6,10 +6,6 @@ import { Gift } from '../../shared/gift.model';
   templateUrl: './list-item.component.html',
   styleUrls: ['./list-item.component.scss'],
 })
-export class ListItemComponent implements OnInit {
+export class ListItemComponent {
   @Input() gift: Gift;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

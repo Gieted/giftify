@@ -7,7 +7,7 @@ import { withoutElement } from '../../utils/array-utils';
 export class HobbiesService {
   selectedHobbies: string[] = [];
 
-  removeHobby(index: number) {
+  unselectHobby(index: number) {
     this.selectedHobbies = withoutElement(this.selectedHobbies, index);
   }
 }

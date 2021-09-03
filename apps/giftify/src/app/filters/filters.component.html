@@ -3,7 +3,7 @@
 <div class="filter-label">hobbies:</div>
 <giftify-tags
   [list]="hobbiesService.selectedHobbies"
-  (removeItemByIndex)="hobbiesService.removeHobby($event)"
+  (removeItemByIndex)="hobbiesService.unselectHobby($event)"
 ></giftify-tags>
 
 <div class="filter-label">price:</div>

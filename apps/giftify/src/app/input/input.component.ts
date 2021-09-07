@@ -17,7 +17,7 @@ export class InputComponent {
   type: 'text' | 'number' = 'text';
 
   onKeyDown(event: KeyboardEvent) {
-    if (this.type === 'number' && event.key !== 'Backspace' && !isNumeric(event.key)) {
+    if (this.type === 'number' && event.key !== 'Backspace' && !isNumeric(event.key) && !event.ctrlKey) {
       event.preventDefault();
     }
   }

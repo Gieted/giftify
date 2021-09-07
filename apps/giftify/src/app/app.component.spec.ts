@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { ListItemComponent } from './list/list-item/list-item.component';
-import { ListComponent } from './list/list.component';
+import { ListItemComponent } from './components/list/list-item/list-item.component';
+import { ListComponent } from './components/list/list.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

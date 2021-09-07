@@ -10,7 +10,7 @@ import { ListService } from './list.service';
 export class ListComponent implements OnInit {
   constructor(private listService: ListService) {}
 
-  giftList: Gift[];
+  giftList!: Gift[];
 
   ngOnInit(): void {
     this.giftList = this.listService.getList();

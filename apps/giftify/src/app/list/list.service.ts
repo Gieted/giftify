@@ -9,8 +9,8 @@ export class ListService {
     {
       name: 'book',
       age: {
-        ageMin: 15,
-        ageMax: 99,
+        min: 15,
+        max: 99,
       },
       price: 40,
       imgPath: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZy3kJluBGb6JUy0wKaoKsBeJRRk6gSxJeg&usqp=CAU',
@@ -18,8 +18,8 @@ export class ListService {
     {
       name: 'bike',
       age: {
-        ageMin: 15,
-        ageMax: 99,
+        min: 15,
+        max: 99,
       },
       price: 900,
       imgPath:
@@ -28,8 +28,8 @@ export class ListService {
     {
       name: 'car',
       age: {
-        ageMin: 15,
-        ageMax: 99,
+        min: 15,
+        max: 99,
       },
       price: 150000,
       imgPath:

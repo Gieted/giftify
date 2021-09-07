@@ -7,5 +7,5 @@ import { Gift } from '../../shared/gift.model';
   styleUrls: ['./list-item.component.scss'],
 })
 export class ListItemComponent {
-  @Input() gift: Gift;
+  @Input() gift!: Gift;
 }

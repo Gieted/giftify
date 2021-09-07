@@ -1,8 +1,8 @@
 export interface Gift {
   name: string;
   age: {
-    ageMin: number;
-    ageMax: number;
+    min: number;
+    max: number;
   };
   price: number;
   imgPath: string;

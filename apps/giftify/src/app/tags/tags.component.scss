@@ -1,0 +1,24 @@
+:host {
+}
+
+.tag {
+  display: inline-flex;
+  margin: 5px;
+  padding: 5px;
+  color: #262626;
+  align-items: center;
+}
+
+.delete {
+  display: inline-flex;
+  border: 0;
+  padding: 2px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.label {
+  margin-right: 3px;
+  white-space: nowrap;
+  font-size: 13px;
+}

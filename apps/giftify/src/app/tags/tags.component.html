@@ -1,0 +1,4 @@
+<div *ngFor="let tag of list; index as i" class="tag" [style.backgroundColor]="getColor(i)">
+  <div class="label">{{ tag }}</div>
+  <button class="bi bi-x-lg delete" (click)="removeItemByIndex.emit(i)"></button>
+</div>

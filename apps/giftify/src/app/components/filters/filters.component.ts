@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HobbiesService } from '../hobbies/hobbies.service';
+import { HobbiesService } from '../../services/hobbies.service';
 
 @Component({
   selector: 'giftify-filters',

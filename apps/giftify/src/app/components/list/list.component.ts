@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Gift } from '../shared/gift.model';
-import { ListService } from './list.service';
+import { Gift } from '../../shared/gift.model';
+import { ListService } from '../../services/list.service';
 
 @Component({
   selector: 'giftify-list',

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Gift } from '../../shared/gift.model';
+import { Gift } from '../../../shared/gift.model';
 
 @Component({
   selector: 'giftify-list-item',

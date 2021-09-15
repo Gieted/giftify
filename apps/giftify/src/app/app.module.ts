@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FiltersComponent } from './components/filters/filters.component';
@@ -9,6 +11,7 @@ import { TagsComponent } from './components/tags/tags.component';
 import { ListComponent } from './components/list/list.component';
 import { ListItemComponent } from './components/list/list-item/list-item.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { QuestionnaireComponent } from './components/questionnaire/questionnaire.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +22,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TagsComponent,
     ListComponent,
     ListItemComponent,
+    QuestionnaireComponent,
   ],
-  imports: [BrowserModule, NgbModule],
+  imports: [BrowserModule, NgbModule, BrowserAnimationsModule, FormsModule],
+  exports: [BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

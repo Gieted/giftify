@@ -1,6 +1,13 @@
 /*
    * Remove template code below
    */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :host {
   display: flex;
   align-items: center;
@@ -8,4 +15,13 @@
   font-family: sans-serif;
   min-width: 300px;
   background-color: #f2f4f5;
+  margin: 0;
+  padding: 0;
 }
+
+// .container{
+//   width: 100vw;
+//   max-width: 100vw;
+//       overflow: hidden;
+
+// }

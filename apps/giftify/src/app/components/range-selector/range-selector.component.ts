@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { QuestionnaireService } from '../../services/questionnaire.service';
 
 @Component({
   selector: 'giftify-range-selector',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./range-selector.component.scss'],
 })
 export class RangeSelectorComponent {
-  readonly inputWidth = '40px';
+  constructor(private questionnaireService: QuestionnaireService) {}
 }

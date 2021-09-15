@@ -1,0 +1,29 @@
+<div class="container-fluid" *ngIf="activeSex">
+  <div class="man-container container">
+    <div class="button" (click)="onChoice('man')">Mężczyzna</div>
+  </div>
+  <div class="woman-container container">
+    <div class="button" (click)="onChoice('woman')">Kobieta</div>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="activeAge">
+  <div class="age-container container">
+    <p class="text-age">Podaj swój wiek</p>
+    <form action="">
+      <div class="container-form">
+        <input class="input-age" type="number" #age />
+        <button type="button" class="button" (click)="onAge(age)">CLICK</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="container-fluid" *ngIf="activeHobby">
+  <div class="category-container container">
+    <form action="">
+      <div class="container-form">
+        <input class="input-hobby" type="number" #age />
+        <button type="button" class="button" (click)="onAge(age)">CLICK</button>
+      </div>
+    </form>
+  </div>
+</div>

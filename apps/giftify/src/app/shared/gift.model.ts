@@ -6,4 +6,5 @@ export interface Gift {
   };
   price: number;
   imgPath: string;
+  category: string;
 }

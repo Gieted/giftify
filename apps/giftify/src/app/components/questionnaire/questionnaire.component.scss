@@ -1,0 +1,61 @@
+.container-fluid {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(179, 255, 0, 0.774);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.row {
+  padding: 0;
+}
+
+.man-container,
+.woman-container {
+  width: 50vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  width: 200px;
+  height: 60px;
+  background-color: blue;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.text-age {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20%;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-age {
+  height: 53px;
+  font-size: 25px;
+}

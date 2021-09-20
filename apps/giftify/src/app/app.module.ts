@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FiltersComponent } from './components/filters/filters.component';
@@ -12,6 +12,7 @@ import { ListComponent } from './components/list/list.component';
 import { ListItemComponent } from './components/list/list-item/list-item.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuestionnaireComponent } from './components/questionnaire/questionnaire.component';
+import { SearchFilterPipe } from './components/questionnaire/filter-pipe';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { QuestionnaireComponent } from './components/questionnaire/questionnaire
     ListComponent,
     ListItemComponent,
     QuestionnaireComponent,
+    SearchFilterPipe,
   ],
-  imports: [BrowserModule, NgbModule, BrowserAnimationsModule, FormsModule],
+  imports: [BrowserModule, NgbModule, BrowserAnimationsModule, ReactiveFormsModule],
   exports: [BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],

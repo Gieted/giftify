@@ -1,7 +1,6 @@
 .container-fluid {
-  height: 100vh;
-  overflow: hidden;
   background-color: rgba(179, 255, 0, 0.774);
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -58,4 +57,30 @@
 .input-age {
   height: 53px;
   font-size: 25px;
+}
+
+.category-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+.hobbies-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+.hobby {
+  padding: 20px;
+  background-color: #fff;
+  margin-right: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.hobby:hover {
+  background-color: rgb(224, 224, 224);
 }

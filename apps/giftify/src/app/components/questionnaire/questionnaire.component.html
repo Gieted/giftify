@@ -1,4 +1,4 @@
-<div class="container-fluid" *ngIf="activeSex">
+<div class="container-fluid" *ngIf="activeGender">
   <div class="man-container container">
     <div class="button" (click)="onChoice('man')">Mężczyzna</div>
   </div>
@@ -19,11 +19,19 @@
 </div>
 <div class="container-fluid" *ngIf="activeHobby">
   <div class="category-container container">
-    <form action="">
+    <form [formGroup]="stateForm" (ngSubmit)="onSubmit()">
       <div class="container-form">
-        <input class="input-hobby" type="number" #age />
-        <button type="button" class="button" (click)="onAge(age)">CLICK</button>
+        <input type="text" placeholder="Wybierz Hobby" formControlName="search" />
       </div>
     </form>
+    <div class="hobbies-container">
+      <p
+        class="hobby"
+        *ngFor="let c of this.questionnaireService.interests | searchFilter: getSearchValue()"
+        (click)="onToggleHobby(c)"
+      >
+        {{ c }}<span *ngIf="hobbyList.includes(c)"> X</span>
+      </p>
+    </div>
   </div>
 </div>

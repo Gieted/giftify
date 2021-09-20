@@ -1,9 +1,9 @@
 export interface Choice {
-  sex?: string;
+  gender?: string;
   age?: number;
   price?: {
     min: number;
     max: number;
   };
-  imgPath?: string;
+  hobby?: string[];
 }
